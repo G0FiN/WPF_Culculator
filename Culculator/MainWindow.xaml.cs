@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 namespace Culculator
 {
 //Vodianov Serhii CT-20
+
     public partial class MainWindow : Window
     {
         public MainWindow()

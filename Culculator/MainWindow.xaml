@@ -5,8 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Culculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Culculator" Height="800" Width="500">
+
+    <Grid x:Name="UI_1" Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock 
+            Text="Culc there thmth
+                  pls..."
+            
+            FontSize="36"
+            FontWeight="DemiBold"
+            Padding="0,25,25,25"
+            TextAlignment="Right"
+            VerticalAlignment="Center"
+            TextWrapping="Wrap"
+            
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="2"
+        />
+
+        <Button Content="0" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="6" Grid.Column="0"/>
+        <Button Content="1" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="5" Grid.Column="0"/>
+        <Button Content="2" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="5" Grid.Column="1"/>
+        <Button Content="3" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="5" Grid.Column="2"/>
+        <Button Content="4" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="4" Grid.Column="0"/>
+        <Button Content="5" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="4" Grid.Column="1"/>
+        <Button Content="6" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="4" Grid.Column="2"/>
+        <Button Content="7" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="3" Grid.Column="0"/>
+        <Button Content="8" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="3" Grid.Column="1"/>
+        <Button Content="9" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="3" Grid.Column="2"/>
+
+        <Button Content="=" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="+" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="3" Grid.Column="3"/>
+        <Button Content="-" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="4" Grid.Column="3"/>
+        <Button Content="*" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="5" Grid.Column="3"/>
+        <Button Content="/" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="6" Grid.Column="3"/>
+
+        <Button Content="CE" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Button Content="✖" FontSize="30" FontWeight="DemiBold"
+                Grid.Row="2" Grid.Column="2"/>
+        <Button Content="🡐" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="2" Grid.Column="3"/>
+
+        <Button Content="☰" FontSize="36" FontWeight="DemiBold"
+                MaxHeight="50" MaxWidth="90"/>
     </Grid>
 </Window>
