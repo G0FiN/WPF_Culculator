@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Culculator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+//Vodianov Serhii CT-20
     public partial class MainWindow : Window
     {
         public MainWindow()
