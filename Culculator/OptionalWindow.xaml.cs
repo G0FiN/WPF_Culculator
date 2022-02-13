@@ -10,16 +10,13 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Culculator
 {
-//Vodianov Serhii CT-20
-
-    public partial class MainWindow : Window
+    public partial class OptionalWindow : Window
     {
-        public MainWindow()
+        public OptionalWindow()
         {
             InitializeComponent();
         }
@@ -27,15 +24,8 @@ namespace Culculator
         private void Burger_Button_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            OptionalWindow optionalWindow = new OptionalWindow();
-            optionalWindow.Show();
-        }
-
-        CulcAll CulcAll = new CulcAll();
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string input = (string)((Button)e.OriginalSource).Content;
-            CulcAll.UpdateRender(input);
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }
