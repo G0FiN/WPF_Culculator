@@ -8,6 +8,7 @@
         Title="Culculator 😼" Height="800" Width="500">
 
     <Grid x:Name="UI_1" Background="Gray" Visibility="Visible">
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -20,11 +21,12 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
+     
         <TextBlock x:Name="textPanel"
             Text="Culc there thmth
                  😿 pls..."
@@ -38,16 +40,21 @@
             
             Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="4"
+            Grid.ColumnSpan="5"
             Grid.RowSpan="2"
         />
 
+        <DockPanel Visibility="Visible" Grid.Row="0" Grid.Column="0" Opacity="0"
+                   Grid.ColumnSpan="5" Grid.RowSpan="2">
+            <TextBox KeyDown="TextBox_KeyDown"  />
+        </DockPanel>
+        
         <Button Content="0" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="6" Grid.Column="0" Click="Button_Click"/>
         <Button Content="1" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="5" Grid.Column="0" Click="Button_Click"/>
         <Button Content="2" FontSize="36" FontWeight="DemiBold"
-                Grid.Row="5" Grid.Column="1"/>
+                Grid.Row="5" Grid.Column="1" Click="Button_Click"/>
         <Button Content="3" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="5" Grid.Column="2" Click="Button_Click"/>
         <Button Content="4" FontSize="36" FontWeight="DemiBold"
@@ -59,34 +66,43 @@
         <Button Content="7" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="3" Grid.Column="0" Click="Button_Click"/>
         <Button Content="8" FontSize="36" FontWeight="DemiBold"
-                Grid.Row="3" Grid.Column="1"/>
+                Grid.Row="3" Grid.Column="1" Click="Button_Click"/>
         <Button Content="9" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="3" Grid.Column="2" Click="Button_Click"/>
 
-        <Button Content="." FontSize="36" FontWeight="DemiBold"
+        <Button Content="," FontSize="36" FontWeight="DemiBold"
                 Grid.Row="6" Grid.Column="1" Click="Button_Click"/>
         <Button Content="=" FontSize="36" FontWeight="DemiBold"
-                Grid.Row="6" Grid.Column="2"/>
-        <Button Content="+" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="6" Grid.Column="2" Click="Button_Click"/>
+        <Button Name="id_5" Content="+" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="3" Grid.Column="3" Click="Button_Click"/>
-        <Button Content="-" FontSize="36" FontWeight="DemiBold"
+        <Button Name="id_6" Content="-" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="4" Grid.Column="3" Click="Button_Click"/>
-        <Button Content="*" FontSize="36" FontWeight="DemiBold"
+        <Button Name="id_7" Content="*" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="5" Grid.Column="3" Click="Button_Click"/>
-        <Button Content="/" FontSize="36" FontWeight="DemiBold"
+        <Button Name="id_8" Content="/" FontSize="36" FontWeight="DemiBold"
                 Grid.Row="6" Grid.Column="3" Click="Button_Click"/>
-
+        
         <Button Content="CE" FontSize="36" FontWeight="DemiBold"
-                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Button_CE_Click"/>
         <Button Content="✖" FontSize="30" FontWeight="DemiBold"
-                Grid.Row="2" Grid.Column="2"/>
-        <Button Content="🡐" FontSize="36" FontWeight="DemiBold"
-                Grid.Row="2" Grid.Column="3"/>
+                Grid.Row="2" Grid.Column="2" Click="Button_Clear_Click"/>
+        <Button Name="id_4" Content="🡐" FontSize="36" FontWeight="DemiBold"
+                Grid.Row="2" Grid.Column="3" Click="Button_Clear_Click"/>
 
         <Button Content="☰" FontSize="36" FontWeight="DemiBold"
                 MaxHeight="50" MaxWidth="90" Click="Burger_Button_Click"/>
+
+        <Button Name="id_1" Content="√"  FontSize="36" FontWeight="DemiBold"
+                Grid.Row="2" Grid.Column="4" Click="id_1_Click"/>
+        <Button Name="id_2" Content="n^"  FontSize="36" FontWeight="DemiBold"
+                Grid.Row="3" Grid.Column="4" Grid.RowSpan="2" Click="id_2_Click"/>
+        <Button Name="id_3" Content="ln"  FontSize="36" FontWeight="DemiBold"
+                Grid.Row="5" Grid.Column="4" Grid.RowSpan="2" Click="id_3_Click"/>
+
+        
     </Grid>
-    
-    
+
+
     
 </Window>
